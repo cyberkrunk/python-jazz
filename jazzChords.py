@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-
+#-------------------------------------------------------------------------------
 # This code contains chords commonly used in jazz
 
 # Section 1: 15 4-note 7th chords in root position, close position
@@ -20,7 +20,30 @@ D7sus4 = [0, 5, 7, 10]
 dim7 = [0, 3, 6, 9]
 dimM7 = [0, 3, 6, 11]
 
-print (M7)
+# Section 2: List math to transpose the chords
 
-print (M7[1])
+t = 60
+transChord = [a + t for a in M7]
+print(transChord)
+
+# Section 3: Define the voicings
+
+# Close position voicings
+cl_R = [0, 0, 0, 0]
+cl_1 = [12, 0, 0, 0]
+cl_2 = [12, 12, 0, 0]
+cl_3 = [12, 12, 12, 0]
+
+# Drop 2 voicings
+d2_R = [0, 12, 0, 0]
+d2_1 = [12, 0, 12, 0]
+d2_2 = [12, 12, 0, 12]
+d2_3 = [12, 12, 12, 0]
+
+# Drop 3 voicings
+d3_R = [0, 12, 12, 0]
+d3_1 = [12, 0, 12, 0]
+d3_2 = [24, 12, 0, 12]
+d3_3 = [24, 24, 12, 0]
+
 

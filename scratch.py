@@ -1,3 +1,26 @@
+listA = [0, 4, 7, 11]
+trans = 60
+listB = [a + trans for a in listA]
+
+print(listB)
+
+print('----------')
+
+
+
+listA = [1, 2, 3, 4]
+listB = [1, 1, 1, 1]
+
+listC = [a + b for a, b in zip(listA, listB)]
+
+listE = [1]
+
+print(listC)
+
+listD = [sum(x) for x in zip(listA, listE)]
+
+print(listD)
+
 exp2 = []
 exp3 = []
 exp5 = []
