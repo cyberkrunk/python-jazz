@@ -24,6 +24,7 @@ dimM7 = [0, 3, 6, 11]
 
 t = 60
 transChord = [a + t for a in M7]
+print('Our base chord:')
 print(transChord)
 
 # Section 3: Define the voicings
@@ -46,4 +47,47 @@ d3_1 = [12, 0, 12, 0]
 d3_2 = [24, 12, 0, 12]
 d3_3 = [24, 24, 12, 0]
 
+# Section 4: Iterate through the voicings
+print('\nClose position voicings:')
 
+voiceChord = sorted([a + b for a, b in zip(transChord, cl_R)])
+print(voiceChord)
+
+voiceChord = sorted([a + b for a, b in zip(transChord, cl_1)])
+print(voiceChord)
+
+voiceChord = sorted([a + b for a, b in zip(transChord, cl_2)])
+print(voiceChord)
+
+voiceChord = sorted([a + b for a, b in zip(transChord, cl_3)])
+print(voiceChord)
+
+print('\nDrop 2 voicings:')
+
+voiceChord = sorted([a + b for a, b in zip(transChord, d2_R)])
+print(voiceChord)
+
+voiceChord = sorted([a + b for a, b in zip(transChord, d2_1)])
+print(voiceChord)
+
+voiceChord = sorted([a + b for a, b in zip(transChord, d2_2)])
+print(voiceChord)
+
+voiceChord = sorted([a + b for a, b in zip(transChord, d2_3)])
+print(voiceChord)
+
+print('\nDrop 3 voicings:')
+
+voiceChord = sorted([a + b for a, b in zip(transChord, d3_R)])
+print(voiceChord)
+
+voiceChord = sorted([a + b for a, b in zip(transChord, d3_1)])
+print(voiceChord)
+
+voiceChord = sorted([a + b for a, b in zip(transChord, d3_2)])
+print(voiceChord)
+
+voiceChord = sorted([a + b for a, b in zip(transChord, d3_3)])
+print(voiceChord)
+
+# End of file----------
