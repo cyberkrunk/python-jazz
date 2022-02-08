@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 #-------------------------------------------------------------------------------
 # This code contains chords commonly used in jazz
+# This is a new comment
 
 # Section 1: 15 4-note 7th chords in root position, close position
 
